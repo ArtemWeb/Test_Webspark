@@ -1,0 +1,52 @@
+
+// -----------------------------------------------------------------------------
+// This file contains typography styles.
+// -----------------------------------------------------------------------------
+
+///*
+//  Set up a decent box model on the root element
+//*/
+
+// set html { font-size: 62.5%; } if you want to make 1rem equal to 10px. dot not use it with css frameworks like bootstrap. tailwind etc.
+
+/*
+  Basic typography style for copy text
+*/
+body {
+  @include font-smoothing;
+  color: $body-color;
+  font-family: $font-family-base;
+  font-size: map-get($font-sizes, 'lg');
+  line-height: $line-height-base;
+  font-weight: $font-weight-normal;
+}
+
+/*
+  Basic styles for links
+*/
+a {
+  @include transition(color);
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+ol,
+dl,
+p {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

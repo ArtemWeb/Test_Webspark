@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- page title -->
+	<title>Test Webspark</title>
+	<link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="16x16" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+	<!-- include jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+	<!-- include jQuery library local file if cdn link doesn't work -->
+	<script>window.jQuery || document.write('<script src="js/jquery-3.7.0.min.js" defer><\/script>')</script>
+</head>
+
+<body>
+	<a class="accessibility" href="#main">Skip to Content</a>
+	<noscript>
+		<div>Javascript must be enabled for the correct page display</div>
+	</noscript>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<a href="#!" class="logo"><img src="./images/logo.svg" alt="Logo"></a>
+					<div class="header-content">
+						<div class="header-title">
+							<h3>monblanproject</h3>
+							<button>Start on 17-02-2016</button>
+						</div>
+						<div class="header-info">
+							<p><strong>870</strong> <span>posts</span></p>
+							<p><strong>11,787</strong> <span>followers</span></p>
+							<p><strong>112</strong> <span>following</span></p>
+						</div>
+						<div class="header-date date-filter">
+							<label for="start-date">Date:</label>
+							<div class="date-filter_input">
+								<input type="text" id="start-date" placeholder="from">
+								<button class="clear-button" data-clear="start-date"></button>
+								<span class="icon-calendar"></span>
+							</div>
+							<div class="date-filter_input">
+								<input type="text" id="end-date" placeholder="end">
+								<button class="clear-button" data-clear="end-date"></button>
+								<span class="icon-calendar"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="page-holder">
+			<main class="main" id="main">
+				<div class="hero">
+					<div class="container">
+						<div class="hero-filter">
+							<button id="grid-view" class="active"></button>
+							<button id="list-view"></button>
+						</div>
+						<div id="posts" class="hero-posts post grid-view">
+						</div>
+						<div id="no-posts-message" class="no-posts-message">Not found</div>
+						<div class="hero-loadmore">
+							<button id="loadmore">Load More</button>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+</body>
+
+</html>
